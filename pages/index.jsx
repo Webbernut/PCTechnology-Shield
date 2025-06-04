@@ -7,7 +7,7 @@ export default function Home(){
     const [items, setItems] = useState([])
     
     useEffect(()=>{
-        fetch("https://server-for-pc-technology.onrender.com/api/users")
+        fetch("https://server-for-pc-technology.onrender.com/api/items-active")
             .then((res) => {
                 if(!res.ok) throw new Error("ошибка загрузки данных")
                     return res.json()
